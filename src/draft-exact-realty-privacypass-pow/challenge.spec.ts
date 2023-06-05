@@ -17,7 +17,7 @@ import assert from 'node:assert/strict';
 import { autobb } from '../lib/base64url.js';
 import producePowWwwAuthenticateHeader from './challenge.js';
 
-describe('draft-ietf-privacypass-protocol-10/blindRsa/challenge', () => {
+describe('draft-exact-realty-privacypass-pow/challenge', () => {
 	it('Builds correctly formatted challenges', async () => {
 		const issuer = '_difficulty-1._alg-0.pow.privacypass.arpa';
 		const origin = 'origin.example.org';

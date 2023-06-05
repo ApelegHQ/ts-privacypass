@@ -51,8 +51,8 @@ const solver = async (difficulty: number, buffer: Uint8Array) => {
 	}
 };
 
-describe('draft-ietf-privacypass-protocol-10/blindRsa/challenge', () => {
-	it('Builds correctly formatted challenges', async () => {
+describe('draft-exact-realty-privacypass-pow/redemption', () => {
+	it('Correctly validades and redeems tokens', async () => {
 		const issuer = '_difficulty-1._alg-0.pow.privacypass.arpa';
 		const origin = 'origin.example.org';
 

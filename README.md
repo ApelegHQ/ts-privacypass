@@ -8,10 +8,9 @@
  ![NPM Downloads](https://img.shields.io/npm/dw/@exact-realty/privacy-pass?style=flat-square)
 
 This project aims to provide a comprehensive implementation of the various
-Private Access Token (PAT) TypeScript Implementation Internet Engineering Task
-Force (IETF) drafts in TypeScript. PATs offer a privacy-focused and efficient
-way to validate user authenticity without relying on CAPTCHAs or collecting
-personal data.
+Private Access Token (PAT) Internet Engineering Task Force (IETF) drafts in
+TypeScript. PATs offer a privacy-focused and efficient way to validate user
+authenticity without relying on CAPTCHAs or collecting personal data.
 
 ## ✨ Features
 
@@ -140,7 +139,8 @@ const requestHandler = async (req) => {
 ## 🤝 Contributing
 
 Contributions are welcome and appreciated! If you would like to contribute to
-this project.
+this project, feel free to submit pull requests, bug reports or feature requests
+to our GitHub repository.
 
 ## 📄 License
 

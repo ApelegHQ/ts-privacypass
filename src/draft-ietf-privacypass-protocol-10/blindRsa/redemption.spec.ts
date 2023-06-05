@@ -54,7 +54,7 @@ const keygen = async (): Promise<[CryptoKey, Uint8Array]> => {
 	return [keyPair.privateKey, new Uint8Array(publicKey)];
 };
 
-describe('draft-ietf-privacypass-protocol-10/blindRsa/challenge', () => {
+describe('draft-ietf-privacypass-protocol-10/blindRsa/redemption', () => {
 	let tokenKeyS: CryptoKey;
 	let tokenKeyP: string;
 	let tokenKeyPR: Uint8Array;
@@ -66,7 +66,7 @@ describe('draft-ietf-privacypass-protocol-10/blindRsa/challenge', () => {
 		tokenKeyP = btoau(r[1]);
 	});
 
-	it('Builds correctly formatted challenges', async () => {
+	it('Correctly validades and redeems tokens', async () => {
 		const issuer = 'some-trusted-issuer.example.com';
 		const origin = '';
 
