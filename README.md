@@ -5,7 +5,7 @@
  [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Exact-Realty_ts-privacypass&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Exact-Realty_ts-privacypass)
  [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Exact-Realty_ts-privacypass&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Exact-Realty_ts-privacypass)
  [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Exact-Realty_ts-privacypass&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Exact-Realty_ts-privacypass)
- ![NPM Downloads](https://img.shields.io/npm/dw/@exact-realty/privacy-pass?style=flat-square)
+ ![NPM Downloads](https://img.shields.io/npm/dw/@exact-realty/privacypass?style=flat-square)
 
 This project aims to provide a comprehensive implementation of the various
 Private Access Token (PAT) Internet Engineering Task Force (IETF) drafts in

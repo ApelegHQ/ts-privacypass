@@ -15,6 +15,7 @@
 
 import { autobb } from '../../lib/base64url.js';
 import g from '../../lib/global.js';
+import { rsa2048SpkiNewToLegacy } from '../../lib/rsa2048SpkiRepresentations.js';
 import timingSafeEqual from '../../lib/timingSafeEqual.js';
 
 const redeemBlindRsaToken = async (
@@ -80,17 +81,7 @@ const redeemBlindRsaToken = async (
 
 	try {
 		// Convert to legacy format for compatibility with Crypto
-		const rawVerificationKey = new Uint8Array(
-			rawTokenKey.byteLength - 67 + 19,
-		);
-		rawVerificationKey.set(
-			[
-				0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86,
-				0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00,
-			],
-			0,
-		);
-		rawVerificationKey.set(rawTokenKey.subarray(67), 19);
+		const rawVerificationKey = rsa2048SpkiNewToLegacy(rawTokenKey);
 
 		const key = await g.crypto.subtle.importKey(
 			'spki',
