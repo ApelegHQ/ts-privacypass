@@ -16,6 +16,12 @@
 		"skipLibCheck": false,
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
+		"plugins": [
+			{
+				"transform": "typescript-transform-paths",
+				"afterDeclarations": true
+			}
+		],
 		"allowJs": true,
 		"checkJs": true,
 		"lib": ["ES2019.object", "ES2019.array", "dom"],

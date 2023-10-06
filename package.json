@@ -1,6 +1,6 @@
 {
   "name": "@exact-realty/privacypass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library for working with Private Access Tokens",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,9 +14,10 @@
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "build": "tsc --emitDeclarationOnly --declarationMap --declaration && node esbuild.mjs",
+    "ts:declaration": "tspc --build --emitDeclarationOnly --declarationMap --declaration",
+		"build": "npm run ts:declaration && node esbuild.mjs",
     "test": "nyc mocha",
-    "prepare": "npm run build",
+    "prepack": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run lint && git add -A src",
@@ -30,17 +31,19 @@
   "license": "ISC",
   "devDependencies": {
     "@types/mocha": "^10.0.1",
-    "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "@typescript-eslint/parser": "^6.1.0",
-    "esbuild": "^0.18.14",
-    "eslint": "^8.45.0",
-    "eslint-config-prettier": "^8.8.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "esbuild": "^0.19.2",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.2",
     "ts-node": "^10.9.1",
-    "typescript": "^5.1.6"
+    "ts-patch": "^3.0.2",
+    "typescript": "^5.1.6",
+    "typescript-transform-paths": "^3.4.6"
   },
   "keywords": [
     "private access tokens",

@@ -30,7 +30,7 @@ To use the PAT TypeScript implementation in your project, install the NPM
 package:
 
 ```sh
-npm install "@exact-realty/private-token"
+npm install "@exact-realty/privacypass"
 ```
 
 ## 🚀 Usage
@@ -41,7 +41,7 @@ npm install "@exact-realty/private-token"
 import {
   produceBlindRsaWwwAuthenticateHeader,
   redeemPatAuthorizationHeader,
-} from '@exact-realty/private-token';
+} from '@exact-realty/privacypass';
 ```
 
 2. Use the PAT library to generate and validate tokens:
